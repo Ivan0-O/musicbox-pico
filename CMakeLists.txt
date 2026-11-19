@@ -35,7 +35,10 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(musicbox musicbox.c )
+add_executable(musicbox
+    musicbox.c
+    audio.S
+)
 
 pico_set_program_name(musicbox "musicbox")
 pico_set_program_version(musicbox "0.1")
